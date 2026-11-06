@@ -152,7 +152,7 @@ navegationUpdated.forEach(link =>
 //All
 allLink.addEventListener("click", () => {
   const allList = courses.filter(course =>
-    course.credits > 1);
+    course.credits >= 0);
   createCertificateCard(allList);
 });
 
