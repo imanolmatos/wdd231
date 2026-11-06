@@ -139,6 +139,14 @@ const cseLink = document.querySelector("#cse");
 
 
 
+const navegationUpdated = document.querySelectorAll(".nav-link");
+navegationUpdated.forEach(link =>
+  link.addEventListener("click", () => {
+    navegationUpdated.forEach(l => l.classList.remove("active"));
+    link.classList.add("active");
+  })
+);
+
 //All
 allLink.addEventListener("click", () => {
   const allList = courses.filter(course =>
