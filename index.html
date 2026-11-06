@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Web Frontend Development I - Imanol Matos. </title>
+    <meta name="description"
+        content="WDD 231 - Web Frontend Development I - Imanol Matos. Home Page, About me, Student photo, Web Cetificate Courses.">
+    <meta name="author" content="Imanol Arturo Matos Ramirez">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/small.css">
+    <link rel="stylesheet" type="text/css" href="styles/larger.css">
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div id="logodivision">
+            <img src="images/logo.svg" class="logo" alt="Imanol Matos Profile picture">
+            <span id="name">Imanol A. Matos</span>
+        </div>
+        <button id="menu" aria-label="Open the Navigation Menu"> </button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" title="Home" class="nav-link active "> Home </a></li>
+                <li><a href="#" title="Chamber" class="nav-link">Chamber</a></li>
+                <li><a href="#" class="nav-link" title="Final"> Final</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <h1> Home. </h1>
+
+        <section class="card">
+            <h2> About Me</h2>
+            <p>
+            <p>My name is Imanol Matos, a Business Administration student at BYU-Idaho based in Azua, Dominican
+                Republic. I am passionate about frontend web development, audiovisual production, and music,
+                continuously building dynamic web projects and learning new technologies.</p>
+            </p>
+
+
+        </section>
+
+        <section class="card">
+            <h2> Student Photo</h2>
+            <div class="personal">
+                <img src="images/personal.webp" alt="Imanol Matos Profile picture">
+
+            </div>
+
+
+        </section>
+
+
+        <section class="card" id="certificates">
+
+            <h2> Web Certificate Courses</h2>
+            <div id="filter">
+                <button type="button" class=filterbutton id="all">All Courses</button>
+                <button type="button" class=filterbutton id="wdd">WDD Courses</button>
+                <button type="button" class=filterbutton id="cse">CSE Courses</button>
+            </div>
+
+            <h3>The total number of course listed below is <span id="totalcourse"></span> and <span
+                    id="totalcredit"></span> credits.</h3>
+            <ul id="list">
+
+            </ul>
+        </section>
+    </main>
+    <footer>
+
+        <nav>
+            <ul id="footerlink">
+                <li><a href="https://www.linkedin.com/in/imanol-matos-64964a22b/" title="Linkedin" target="_blank"> <img
+                            src="images/linkedin.svg" alt="Imanol Matos's linkedin" class="logo"></a></li>
+                <li><a href="https://github.com/imanolmatos" title="Github" target="_blank"><img src="images/github.svg"
+                            alt="Imanol Matos's github" class="logo"> </a></li>
+                <li><a href="https://www.instagram.com/churchofjesuschrist/" title="Instagram" target="_blank"> <img
+                            src="images/instagram.svg" alt="Church of Jesuscrist's instagram" class="logo"> </a></li>
+            </ul>
+        </nav>
+
+        <p> &copy; <span id="currentyear"></span> | 🏖️ Imanol Arturo Matos Ramirez 🏖️ | Dominican Republic </p>
+        <p> Last Modified: <span id="last"> ></span></p>
+
+    </footer>
+
+</body>
+
+</html>

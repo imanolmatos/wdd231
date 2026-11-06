@@ -1,0 +1,45 @@
+@media screen and (min-width:800px) {
+    main {
+        display: grid;
+        gap: 15px;
+        padding: 15px;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+    }
+
+    main h1 {
+        grid-column: 1/3;
+        text-align: left;
+    }
+
+    #certificates {
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column: 1/3;
+   
+}
+
+    .navigation {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    
+
+    #menu {
+        display: none;
+    }
+
+
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
+}
