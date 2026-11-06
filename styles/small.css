@@ -167,7 +167,7 @@ section.card p {
 
  section.card div.personal img{
     display: block;
-    max-width: 100;
+    width: 200px;
     margin: 0 auto;   
     padding: 10px;
 }
