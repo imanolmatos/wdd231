@@ -27,10 +27,10 @@ hamButton.addEventListener("click", () => {
 
 const navegationUpdated = document.querySelectorAll(".nav-link");
 navegationUpdated.forEach(link =>
-  link.addEventListener("click", () => {
-    navegationUpdated.forEach(l => l.classList.remove("active"));
-    link.classList.add("active");
-  })
+    link.addEventListener("click", () => {
+        navegationUpdated.forEach(l => l.classList.remove("active"));
+        link.classList.add("active");
+    })
 );
 
 
@@ -102,8 +102,7 @@ listButton.addEventListener("click", () => {
     directory.classList.add("filterList");
     gridButton.classList.remove("buttonActivated");
     listButton.classList.add("buttonActivated");
-    
- 
+
 });
 
 

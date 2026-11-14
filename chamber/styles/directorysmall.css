@@ -77,7 +77,7 @@ main h1 {
 
 p {
     padding: 4px;
-    
+
 }
 
 .navigation {
@@ -109,7 +109,7 @@ p {
 #directory {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 7px; 
+    gap: 7px;
     justify-content: center;
     text-align: left;
 }
@@ -130,7 +130,7 @@ p {
 #directory section {
     display: grid;
     grid-template-columns: auto 1fr;
-    gap: 1px; 
+    gap: 1px;
     border: 2px solid rgba(0, 0, 0, 1);
     padding: 5px;
 }
@@ -192,7 +192,7 @@ footer span {
     border-radius: 4px;
     padding: 10px;
     padding-left: 40px;
-    padding-right: 40px; 
+    padding-right: 40px;
     margin: 2px;
     text-align: center;
     justify-content: center;
@@ -203,19 +203,20 @@ footer span {
 }
 
 
-#directory.filterList{
-  gap:0;
-  display: flex;
-  flex-direction: column;
+#directory.filterList {
+    gap: 0;
+    display: flex;
+    flex-direction: column;
 }
-#directory.filterList img{
+
+#directory.filterList img {
     display: none;
 }
 
 
-#directory.filterList section  {
+#directory.filterList section {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 4fr)  ;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 4fr);
     border: none;
     padding: 10px;
     align-items: center;
@@ -225,15 +226,14 @@ footer span {
     overflow-wrap: anywhere;
 }
 
-#directory.filterList section:nth-child(odd)
-{
+#directory.filterList section:nth-child(odd) {
     background-color: rgba(78, 165, 223, 0.15);
 }
 
 
-#directory.filterList section div  {
-     display: grid;
-     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+#directory.filterList section div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 
