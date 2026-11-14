@@ -1,0 +1,75 @@
+{"members": [{
+    "name":"Agua Buena",
+    "address": "Sanchez Highway, Km 2, Azua de Compostela",
+    "email":"info@aguabuena.com.do",
+    "phone":"809-521-2400",
+    "url":"https://aguabuena.com.do",
+    "photo": "images/aguabuena.webp",
+    "level": "Gold"
+},{
+    "name":"La Ñapa",
+    "address": "Duarte Street #58, Azua de Compostela",
+    "email":"info@lanapa.com",
+    "phone":"809-521-7867",
+    "url":"https://instagram.com/lanapa",
+    "photo": "images/lanapa.webp",
+    "level": "Member"
+},{
+    "name":"Boxmedia",
+    "address": "Emilio Prud'Homme Street #19, Azua de Compostela",
+    "email":"hola@boxmediard.com",
+    "phone":"809-521-6712",
+    "url":"https://boxmediard",
+    "photo": "images/boxmedia.webp",
+    "level": "Member"
+},{
+    "name":"Wimeza Electronics",
+    "address": "Enriquillo Avenue #84, Azua de Compostela",
+    "email":"ventas@wimeza.do",
+    "phone":"809-521-5390",
+    "url":"https://instagram.com/wimeza",
+    "photo": "images/wimeza.webp",
+    "level": "Gold"
+},{
+    "name":"Hotel Monte Mar",
+    "address": "Playa Monte Rio Highway, Km 3, Azua de Compostela",
+    "email":"reservas@hotelmontemarazua.com",
+    "phone":"809-521-3920",
+    "url":"https://hotelmontemarazua.com",
+    "photo": "images/hotelmontemar.webp",
+    "level": "Member"
+},{
+    "name":"Mi Casita",
+    "address": "Sanchez Street #31, Azua de Compostela",
+    "email":"pedidos@pizzeriamicasita.do",
+    "phone":"809-521-7410",
+    "url":"https://micasitaazua",
+    "photo": "images/micasita.webp",
+    "level": "Silver"
+},{
+    "name":"Helados Bon Azua",
+    "address": "Duarte Street, Corner of Santome Street, Azua de Compostela",
+    "email":"azua@heladosbon.com",
+    "phone":"809-521-4115",
+    "url":"https://heladosbon.com",
+    "photo": "images/bon.webp",
+    "level": "Gold"
+},{
+    "name":"Ferretería Papaterra Azua",
+    "address": "Sanchez Highway, Km 1.5, Azua de Compostela",
+    "email":"azua@papaterra.com.do",
+    "phone":"809-521-3500",
+    "url":"https://papaterra.com.do",
+    "photo": "images/ferreteria.webp",
+    "level": "Gold"
+},{
+    "name":"Gym El Estilo",
+    "address": "27 de Febrero Street #28, Azua de Compostela",
+    "email":"contacto@gymelestilo.do",
+    "phone":"809-521-6940",
+    "url":"https://instagram.com/estiloazua",
+    "photo": "images/estilo.webp",
+    "level": "Member"
+}
+]
+}
