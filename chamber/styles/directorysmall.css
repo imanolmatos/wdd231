@@ -199,7 +199,7 @@ footer span {
 }
 
 .buttonActivated {
-    background-color: #2892D7;
+    background-color: var(--primary-color);
 }
 
 
