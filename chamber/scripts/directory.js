@@ -36,7 +36,7 @@ navegationUpdated.forEach(link =>
 
 // directory
 
-const url = "data/directory.json";
+const url = "data/members.json";
 const cards = document.querySelector("#directory");
 // Create an async function named "getProphetData" that uses await fetch() to fetch data from the JSON source URL.
 async function getMembersData() {
