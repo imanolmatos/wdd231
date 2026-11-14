@@ -51,7 +51,7 @@ getMembersData();
 const displayMembers = (members) => {
     members.forEach((member) => {
         const card = document.createElement("section");
-        const name = document.createElement("h2");
+        const name = document.createElement("h3");
         const img = document.createElement("img");
         const information = document.createElement("div");
         const address = document.createElement("p");
@@ -83,4 +83,29 @@ const displayMembers = (members) => {
     });
 
 }
+
+const gridButton = document.querySelector("#grid");
+const listButton = document.querySelector("#list");
+const directory = document.querySelector("#directory");
+
+
+gridButton.addEventListener("click", () => {
+    directory.classList.add("filterGrid");
+    directory.classList.remove("filterList");
+    gridButton.classList.add("buttonActivated");
+    listButton.classList.remove("buttonActivated");
+
+});
+
+
+
+listButton.addEventListener("click", () => {
+    directory.classList.add("filterList");
+    directory.classList.remove("filterGrid");
+    gridButton.classList.remove("buttonActivated");
+    listButton.classList.add("buttonActivated");
+    
+ 
+});
+
 
