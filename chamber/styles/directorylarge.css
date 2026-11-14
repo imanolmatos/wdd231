@@ -28,6 +28,12 @@
     }
 
 
+    #directory.filterList section div {
+    display: grid;
+    grid-template-columns: repeat(5,minmax(0,1fr));
+}
+
+
 
     .navigation a {
         display: block;

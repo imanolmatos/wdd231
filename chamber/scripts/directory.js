@@ -90,7 +90,6 @@ const directory = document.querySelector("#directory");
 
 
 gridButton.addEventListener("click", () => {
-    directory.classList.add("filterGrid");
     directory.classList.remove("filterList");
     gridButton.classList.add("buttonActivated");
     listButton.classList.remove("buttonActivated");
@@ -101,7 +100,6 @@ gridButton.addEventListener("click", () => {
 
 listButton.addEventListener("click", () => {
     directory.classList.add("filterList");
-    directory.classList.remove("filterGrid");
     gridButton.classList.remove("buttonActivated");
     listButton.classList.add("buttonActivated");
     

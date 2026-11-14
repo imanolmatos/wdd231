@@ -53,7 +53,7 @@ header {
 
 main {
     display: grid;
-    gap: 20px;
+    gap: 10px;
     padding: 25px;
     grid-template-columns: 1fr;
     justify-content: center;
@@ -182,7 +182,6 @@ footer span {
 /* Filter information */
 #filter {
     display: flex;
-    gap: 4px;
     flex-direction: row;
     justify-content: center;
 }
@@ -197,37 +196,49 @@ footer span {
     justify-content: center;
 }
 
-.filterGrid {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 1px; 
-    padding: 5px;
-
+.buttonActivated {
+    background-color: #2892D7;
 }
 
-#directory.filterList{
-    display: flex;
-    flex-direction: column;
 
+#directory.filterList{
+  gap:0;
+  display: flex;
+  flex-direction: column;
 }
 #directory.filterList img{
     display: none;
 }
 
-.buttonActivated {
-    background-color: #2892D7;
-}
-
-#directory.filterList section div {
-    display: flex;
-}
 
 #directory.filterList section  {
-    display: flex;
-    gap: 20px;
-  
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 4fr)  ;
+    border: none;
+    padding: 10px;
+    align-items: center;
 }
 
+#directory.filterList p {
+    overflow-wrap: anywhere;
+}
+
+#directory.filterList section:nth-child(odd)
+{
+    background-color: rgba(78, 165, 223, 0.15);
+}
+
+
+#directory.filterList section div  {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+
+#directory.filterList h3 {
+    text-align: left;
+    grid-column: auto;
+}
 
 /* Menu and Header Information */
 
