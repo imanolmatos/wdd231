@@ -280,3 +280,71 @@ footer span {
 .active::before {
     content: "📍";
 }
+
+/* Home info */
+
+#homeHero img {
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+#homeHero {
+    position: relative;
+    
+}
+
+#homeLink {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.7rem;
+    white-space: nowrap;
+    background-color: var(--secondary-color);
+    padding: 5px;
+    border-color: #000500;
+    border: 1px solid var(--accent2-color);
+    border-radius: 4px;
+    text-decoration: none;
+    color: var(--accent2-color);
+}
+
+
+
+
+.home-h2 {
+    text-align: center;
+}
+
+#homeGrid {
+    text-align: center;
+    padding: 10px;
+}
+
+#homeGrid section { 
+    padding: 10px;
+}
+#current-events  {
+    list-style: none;
+}
+
+#events {
+    margin-top: 10px;
+     border-color: #000500;
+    border: 2px solid var(--accent2-color);
+    border-radius: 4px;
+    text-decoration: none;
+    color: var(--accent2-color);
+
+}
+
+
+
+#weatherSection h2  {
+    padding: 0px;
+    margin: 10px;
+}
+
+
+

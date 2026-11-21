@@ -1,0 +1,38 @@
+:root {
+    --primary-color: #4EA5DF;
+    --secondary-color: #FFFFFC;
+    --accent1-color: #376323;
+    --accent2-color: #000500;
+
+    --heading-font: 'Bebas Neue', cursive;
+    --paragraph-font: 'Roboto', sans-serif;
+
+    --nav-background-color: #2892D7;
+    --nav-link-color: #000500;
+    --nav-hover-link-color: #376323;
+    --nav-hover-background-color: #FFFFFC;
+}
+
+
+.card {
+    border: 1px solid var(--accent2-color);
+    background-color: var(--primary-color);
+
+    text-align:  center;
+}
+
+.card h1 {
+    color: var(--accent2-color);
+    margin: .3rem 0;
+}
+
+
+.card #description {
+    text-transform: capitalize;
+    color: var(--accent2-color);
+    margin: .3rem 0;
+}
+
+#main {background-color: var(--secondary-color);}
+
+footer {padding: 20px;}
