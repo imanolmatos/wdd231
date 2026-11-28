@@ -115,13 +115,16 @@ function createCertificateCard(filteredList) {
   const list = document.querySelector("#list");
   filteredList.forEach(certificate => {
     const li = document.createElement("li");
+    const button = document.createElement("button");
     if (certificate.completed) {
-      li.innerHTML = `${certificate.subject} ${certificate.number} ✓ `;
-      li.classList.add("completed");
+      button.innerHTML = `${certificate.subject} ${certificate.number} ✓ `;
+      button.classList.add("completed");
     } else {
-      li.innerHTML = `${certificate.subject} ${certificate.number}`;
-      li.classList.add("notCompleted");
+      button.innerHTML = `${certificate.subject} ${certificate.number}`;
+      button.classList.add("notCompleted");
     }
+    button.addEventListener("click",() => {displayCourseDetails(certificate)});
+    li.appendChild(button);
     list.appendChild(li);
   });
 
@@ -172,5 +175,29 @@ createCertificateCard(courses);
 
 
 
+// modal
 
 
+const courseDetails = document.querySelector("#course-details");
+
+function displayCourseDetails(course) {
+  courseDetails.innerHTML = `
+  <button id="closeModal" aria-label="Close">❌</button>
+  <h2>${course.subject} ${course.number}</h2>
+  <h3>${course.title}</h3>
+  <p><strong>Credits</strong>: ${course.credits}</p>
+  <p><strong>Certificate</strong>:${course.certificate}</p>
+  <p>${course.description}</p>
+  <p><strong>Technologies</strong>: ${course.technology.join(",")}</p>
+`;
+
+courseDetails.showModal();
+
+courseDetails.querySelector("#closeModal").addEventListener("click", () =>   courseDetails.close());
+}
+
+courseDetails.addEventListener("click", (event) => {
+  if (event.target === courseDetails) {
+    courseDetails.close();
+  }
+})

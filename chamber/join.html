@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Azua's Chamber of Commerce Join</title>
+    <meta name="description"
+        content="Apply for membership at the Azua Chamber of Commerce. Explore our NP, Bronze, Silver, and Gold membership levels, member benefits, and local networking opportunities.">
+    <meta name="author" content="Imanol Arturo Matos Ramirez">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/chambersmall.css">
+    <link rel="stylesheet" type="text/css" href="styles/chamberlarge.css">
+    <script src="scripts/join.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <meta property="og:title" content="Azua's Chamber of Commerce Join">
+    <meta property="og:description"
+        content="Apply for membership at the Azua Chamber of Commerce. Explore our NP, Bronze, Silver, and Gold membership levels, member benefits, and local networking opportunities.">
+    <meta property="og:image" content="https://imanolmatos.github.io/wdd231/images/personal.webp">
+    <meta property="og:url" content="https://imanolmatos.github.io/wdd231/chamber/join.html">
+</head>
+
+<body>
+    <header id="headerdivision">
+        <div id="logodivision">
+            <img src="images/logo.svg" class="logo" alt="Azua Chamber of commerce's logo">
+            <span id="name"> Azua's Chamber of Commerce</span>
+        </div>
+        <button id="menu" aria-label="Open the Navigation Menu"> </button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="./index.html" title="Home" class="nav-link"> Home </a></li>
+                <li><a href="./directory.html" title="Directory" class="nav-link">Directory</a></li>
+                <li><a href="./join.html" class="nav-link active" title="Join"> Join</a></li>
+                <li><a href="#" class="nav-link" title="Discover"> Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Join</h1>
+        <div id="join-container">
+            <form method="GET" action="thankyou.html" class="designForm">
+                <label>First Name <input type="text" name="first" required autocomplete="given-name"
+                        title="Your First Name">
+                </label>
+                <label>Last Name <input type="text" name="last" required autocomplete="family-name"
+                        title="Your Last Name">
+                </label>
+                <label>Organizational Title <input type="text" name="orgtitle" autocomplete="organization-title"
+                        title="Your Organization Title" pattern="[A-Za-z -]{7,}">
+                </label>
+                <label>Email Address <input type="email" name="email" required autocomplete="email" title="Your Email"
+                        placeholder="youremail@email.com">
+                </label>
+                <label>Mobile Phone Number <input type="tel" name="phone" required autocomplete="tel"
+                        title="Your Mobile Phone Number">
+                </label>
+                <label>Business/Organization's Name <input type="text" name="organization" required
+                        autocomplete="organization" title="Your Business/Organization's Name">
+                </label>
+                <label>Membership Level <select name="membership" title="Your membership level">
+                        <option value="np">NP Membership</option>
+                        <option value="bronze">Bronze Membership </option>
+                        <option value="silver">Silver Membership </option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+                <label>Business' description <textarea name="description"
+                        title="Business' description"></textarea></label>
+                <input type="hidden" name="timestamp" id="timestamp">
+                <input type="submit" value="Apply for Membership">
+            </form>
+            <div id="membership-container">
+                <section class="membership">
+                    <h2>
+                        Non Profit Membership
+
+                    </h2>
+                    <button data-modal="modal-np">
+                        See details
+                    </button>
+                </section>
+                <section class="membership">
+                    <h2>
+                        Bronze Membership
+                    </h2>
+                    <button data-modal="modal-bronze">
+                        See details
+                    </button>
+                </section>
+                <section class="membership">
+                    <h2>
+                        Silver Membership
+                    </h2>
+                    <button data-modal="modal-silver">
+                        See details
+                    </button>
+                </section>
+                <section class="membership">
+                    <h2>
+                        Gold Membership
+                    </h2>
+                    <button data-modal="modal-gold">
+                        See details
+                    </button>
+                </section>
+
+
+            </div>
+        </div>
+        
+            <dialog id="modal-np">
+                <div class="modal-header">
+                    <h3>Non Profit Membership</h3>
+                    <button class="close-modal-button" aria-label="Close Modal">❌</button>
+                </div>
+                <h4>Benefits include:</h4>
+                <ul>
+                    <li>Invitations to community meetings and open Chamber assemblies
+                    </li>
+                    <li>Access to the monthly provincial economic newsletter
+                    </li>
+                </ul>
+                <h4>COST: Free (DOP 0 / year)</h4>
+            </dialog>
+            <dialog id="modal-bronze">
+                <div class="modal-header">
+                    <h3>Bronze Membership</h3>
+                    <button class="close-modal-button" aria-label="Close Modal">❌</button>
+                </div>
+                <h4>Benefits include:</h4>
+                <ul>
+                    <li>
+                        All Non-Profit Membership benefits
+                    </li>
+                    <li> 
+                        10% discount on business training, finance, and digital marketing workshops
+                    </li>
+                    <li>
+                        Welcome spotlight mention on the Chamber's official social media channels
+                    </li>
+                    <li>
+                        Access to monthly networking nights with local business owner
+                    </li>
+                </ul>
+                <h4>COST: DOP 6,000 / year</h4>
+            </dialog>
+            <dialog id="modal-silver">
+                <div class="modal-header">
+                    <h3>Silver Membership</h3>
+                    <button class="close-modal-button" aria-label="Close Modal">❌</button>
+                </div>
+                <h4>Benefits include:</h4>
+                <ul>
+                    <li>
+                        All Bronze Membership benefits
+                    </li>
+                    <li>
+                        25% discount on event hall rentals and exhibition booths at Azua trade fairs
+                    </li>
+                    <li>
+                        Quarterly featured article about your business in the Chamber newsletter
+                    </li>
+                </ul>
+                <h4>COST: DOP 15,000 / year</h4>
+            </dialog>
+            <dialog id="modal-gold">            
+                    <div class="modal-header">   
+                    <h3>Gold Membership</h3>
+                    <button class="close-modal-button" aria-label="Close Modal">❌</button>
+                </div>
+                <h4>Benefits include:</h4>
+                <ul>
+                    <li>
+                        All Silver Membership benefits
+                    </li>
+                    <li>
+                        Rotating spotlight advertising on the Chamber website's home page
+                    </li>
+                    <li>
+                        50% discount and VIP seating at annual business roundtables and galas
+                    </li>
+                    <li>
+                        Official sponsorship visibility at Chamber trainings and major events
+                    </li>
+                </ul>
+                <h4>COST: DOP 30,000 / year</h4>
+            </dialog>
+    </main>
+    <footer>
+        <div>
+            <p><strong>Azua Chamber of Commerce</strong></p>
+            <p> Duarte Street #45</p>
+            <p>Azua de Compostela, Dominican Republic 71000</p>
+            <p> info@azuachamber.org</p>
+            <p>(809) 521-4500</p>
+        </div>
+        <div>
+            <nav>
+                <ul id="footerlink">
+                    <li><a href="https://www.linkedin.com/in/imanol-matos-64964a22b/" title="Linkedin" target="_blank">
+                            <img src="images/linkedin.svg" alt="Imanol Matos's linkedin" class="logo"></a></li>
+                    <li><a href="https://github.com/imanolmatos" title="Github" target="_blank"><img
+                                src="images/github.svg" alt="Imanol Matos's github" class="logo"> </a></li>
+                    <li><a href="https://www.instagram.com/churchofjesuschrist/" title="Instagram" target="_blank"> <img
+                                src="images/instagram.svg" alt="Church of Jesuscrist's instagram" class="logo"> </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <p>WDD231 Class Project</p>
+            <p>Imanol Matos</p>
+            <p>&copy; <span id="currentyear"></span> Azua Chamber of Commerce.</p>
+            <p> Last Modification: <span id="last"> </span></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
